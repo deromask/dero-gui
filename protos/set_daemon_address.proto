@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package model;
+
+message SetDaemonAddressParam {
+    string address = 1;
+}
+
+message SetDaemonAddressResult {
+    string status = 1;
+}

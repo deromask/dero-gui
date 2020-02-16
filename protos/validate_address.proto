@@ -1,0 +1,12 @@
+syntax="proto3";
+
+package model;
+
+message ValidateAddressParam {
+    string address = 1;
+}
+
+message ValidateAddressResult {
+    bool valid = 1;
+    string status = 2;
+}

@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package model;
+
+message SetCleanupIntervalParam {
+    uint64 duration = 1;
+}
+
+message SetCleanupIntervalResult {
+    bool status = 1;
+}

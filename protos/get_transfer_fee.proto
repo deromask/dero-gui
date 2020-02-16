@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package model;
+
+message GetTransferFeeParam {
+}
+
+message GetTransferFeeResult {
+    uint64 fee = 1;
+    string fee_format = 2;
+}

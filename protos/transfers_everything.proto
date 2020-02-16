@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package model;
+
+message TransfersEverythingParam {
+    string address = 1;
+    uint64 fee = 2;
+    uint64 mixin = 3;
+    uint64 unlock_time = 4;
+    string payment_id = 5;
+}

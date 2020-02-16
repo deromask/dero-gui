@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package model;
+
+message BoolResult {
+    bool result = 1;  // actual result
+    string fail_safe = 2; // always set this to non-zero value to prevent protobuf return an empty byte array
+}
+
+// return tx_info

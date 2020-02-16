@@ -1,0 +1,23 @@
+Setup Go Mobile and build/bind the source code:
+
+Go Mobile repo: https://github.com/golang/mobile Go Mobile wiki: https://github.com/golang/go/wiki/Mobile
+
+Install Go: brew install go
+
+Install Gomobile: go get -u golang.org/x/mobile/cmd/gomobile
+
+Install Gobind: go install golang.org/x/mobile/cmd/gobind
+
+Install Android SDK and NDK using Android Studio
+
+Set env: export ANDROID_HOME="/AndroidSDK" (path to your SDK)
+
+Init gomobile: gomobile init -ndk /AndroidSDK/ndk-bundle/ (path to your NDK)
+
+Copy Go module dependencies to the vendor directory: go mod vendor
+
+Build examples: gomobile build -target=android #or ios
+
+Bind examples: gomobile bind -target ios -o frameworks/name.framework gomobile bind -target android
+
+The bind will create framework for iOS and jar&aar files for Android (x86_64 and ARM).

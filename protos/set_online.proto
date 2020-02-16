@@ -1,0 +1,10 @@
+syntax="proto3";
+
+package model;
+
+message SetOnlineParam {
+}
+
+message SetOnlineResult {
+    bool status = 1;
+}

@@ -1,0 +1,12 @@
+syntax="proto3";
+
+package model;
+
+message OpenWalletParam {
+    string filename = 1;
+    string password = 2;
+}
+
+message OpenWalletResult {
+    bool status = 1;
+}

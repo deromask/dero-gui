@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package model;
+
+message GetSeedParam {
+    string lang = 1;
+}
+
+message GetSeedResult {
+    string seed = 1;
+}

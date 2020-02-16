@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package model;
+
+import "transfer_details.proto";
+
+message GetTransfersParam {
+    bool in = 1;
+    bool out = 2;
+    bool pending = 3;
+    bool failed = 4;
+    bool pool = 5;
+    bool filter_by_height = 6;
+    uint64 min_height = 7;
+    uint64 max_height = 8;
+}
+
+message GetTransfersResult {
+    repeated TransferDetails desc = 1;
+//    repeated TransferDetails out = 2;
+//    repeated TransferDetails pending = 3;
+//    repeated TransferDetails failed = 4;
+//    repeated TransferDetails pool = 5;
+}

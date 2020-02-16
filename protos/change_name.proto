@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package model;
+
+message ChangeNameParam {
+    string filepath = 1;
+}
+
+message ChangeNameResult {
+    string status = 1;
+}

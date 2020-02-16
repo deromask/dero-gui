@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package model;
+
+message TxInfo {
+    uint64 fee = 1;
+    string hash = 2;
+    bytes blob = 3;
+}

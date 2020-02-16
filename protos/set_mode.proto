@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package model;
+
+message SetModeParam {
+    bool mode = 1;
+}
+
+message SetModeResult {
+    string status = 1;
+}

@@ -1,0 +1,29 @@
+syntax="proto3";
+
+package model;
+
+import "appsettings.proto";
+
+message WalletStateParam {
+    AppSettings app_settings = 1;
+}
+
+message WalletState {
+    bool mode = 1;
+    string address = 2;
+    uint64 height = 3;
+    int64 topo_height = 4;
+    string daemon_address = 5;
+    uint64 daemon_height = 6;
+    int64 daemon_topo_height = 7;
+    uint64 mature_balance = 8;
+    uint64 locked_balance = 9;
+    uint64 balance = 10;
+    double price = 11;
+    string wallet_path = 12;
+    string seed = 13;
+    string spend_key = 14;
+    string view_key = 15;
+    bool is_view_only = 16;
+    uint64 tx_fee = 17;
+}

@@ -1,0 +1,12 @@
+syntax="proto3";
+
+package model;
+
+message Contact {
+    string name = 1;
+    string address = 2;
+}
+
+message Contacts {
+    repeated Contact contacts = 1;
+}

@@ -1,0 +1,10 @@
+syntax="proto3";
+
+package model;
+
+message CloseWalletParam {
+}
+
+message CloseWalletResult {
+    string status = 1;
+}

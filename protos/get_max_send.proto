@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package model;
+
+message GetMaxSendParam {
+}
+
+message GetMaxSendResult {
+    uint64 amount = 1;
+    string amount_format = 2;
+}

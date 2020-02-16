@@ -1,0 +1,8 @@
+syntax="proto3";
+
+package model;
+
+message AppSettings {
+    string daemon_address = 1;
+    string theme = 2;
+}

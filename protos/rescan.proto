@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package model;
+
+message RescanParam {
+    int64 height = 1;
+}
+
+message RescanResult {
+    string status = 1;
+}

@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package model;
+
+message IsMaxSendParam {
+    string amount =1;
+}
+
+message IsMaxSendResult {
+    bool result = 1;
+}

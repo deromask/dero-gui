@@ -1,0 +1,15 @@
+syntax="proto3";
+
+package model;
+
+message RecoverWalletParam {
+    string type = 1;
+    string filename = 2;
+    string password = 3;
+    string data = 4;
+    int64 startHeight = 5;
+}
+
+message RecoverWalletResult {
+    bool status = 1;
+}

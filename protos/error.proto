@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package model;
+
+message Error {
+    uint32 code = 1;
+    string scode = 2;
+    string message = 3;
+}

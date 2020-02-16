@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package model;
+
+import "destination.proto";
+
+
+message TransferDetails {
+    string txid = 1;
+    string payment_id = 2;
+    uint64 block_height = 3;
+    int64  block_topoheight = 4;
+    uint64 amount = 5;
+    uint64 fee = 6;
+    uint64 unlock_time = 7;
+    repeated Destination Destinations = 8;
+    string secret_tx_key = 9;
+    string type = 10;
+    uint64 timestamp = 11;
+}

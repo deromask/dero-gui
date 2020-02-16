@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package model;
+
+message TransfersResult {
+    uint64 fee = 1;
+    string tx_key = 2;
+    string tx_hash = 3;
+    string tx_blob = 4;
+}
