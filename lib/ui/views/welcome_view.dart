@@ -74,7 +74,7 @@ class _WelcomeViewState extends State<WelcomeView> {
                         margin: EdgeInsets.symmetric(
                             horizontal: ScreenUtil().setWidth(50)),
                         child: AutoSizeText(
-                          "Welcome to DeroMask. To begin you may create a new wallet or import an existing one.",
+                          "Welcome to Dero Blockchain. To begin you may create a new wallet or import an existing one.",
                           style: AppStyles.textStyleParagraph(context),
                           maxLines: 4,
                           stepGranularity: 0.5,
