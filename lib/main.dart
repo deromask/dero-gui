@@ -62,7 +62,7 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        title: 'DeroMask',
+        title: 'Dero',
         theme: ThemeData(),
         initialRoute: '/',
         onGenerateRoute: Router.generateRoute,
